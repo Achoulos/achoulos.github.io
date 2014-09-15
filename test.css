@@ -39,20 +39,32 @@ a.block-hide {
     color:red;
 }
 
-@-webkit-keyframes movey {
-    100% {transform: rotate(360deg);}
+@-webkit-keyframes moveyf {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes movey {
-    100% {transform: rotate(360deg);}
+     0% {
+         transform: rotate(0deg);
+         -webkit-transform: rotate(0deg);
+     }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 span.block-hide:hover {
     color:green;
-    -webkit-animation: movey 5s infinite;
+    -webkit-animation: moveyf 5s infinite;
     animation: movey 5s infinite;
-    
-   /* transform: rotate(180deg);*/
 }
 
 swaggin.block-hide {
