@@ -1,0 +1,68 @@
+p {
+    color: blue; 
+    text-decoration: underline;
+}
+
+strong {
+    color: red;
+}
+
+.swag {
+    color:green;
+}
+
+a.swag:hover {
+    padding: 1px 10px 1px 10px;
+  color: #fff;
+  background: #555;
+  border-radius: 3px;
+  border: 1px outset rgba(50,50,50,.5);
+  font-family: georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#yolo {
+    font-weight: 200;
+}
+
+div.menu-bar ul ul {
+  display: none;
+}
+
+div.menu-bar li:hover > ul {
+  display: block;
+}
+
+a.block-hide {
+    color:red;
+}
+
+@-webkit-keyframes movey {
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes movey {
+    100% {transform: rotate(360deg);}
+}
+
+span.block-hide:hover {
+    color:green;
+    -webkit-animation: movey 5s infinite;
+    animation: movey 5s infinite;
+    
+   /* transform: rotate(180deg);*/
+}
+
+swaggin.block-hide {
+    color:blue;
+}
+
+span.block-hide:hover swaggin {
+    color:yellow;
+}
+
+span.block-hide:hover span.block-hide {
+ color:red;   
+}
