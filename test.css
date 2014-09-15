@@ -66,6 +66,7 @@ a.block-hide {
 }
 
 span.block-hide:hover {
+    font-size: 20px;
     color:green;
     -webkit-animation: movey 1.0s infinite;
     animation: movey 1.0s infinite;
@@ -82,3 +83,38 @@ span.block-hide:hover swaggin {
 span.block-hide:hover span.block-hide {
  color:red;   
 }
+
+span.blocks {
+    vertical-align: middle
+    border-right: 1px solid #ddd;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+    font-family:sans-serif;
+    background: #c4c4c4;
+}
+
+span.innerblocks {
+        vertical-align: middle
+
+    border-right: 1px solid #ddd;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px 5px 10px;
+    display:none;
+    background: #d3d3d3
+}
+
+span.blocks:hover > span.innerblocks {
+        vertical-align: middle
+
+    border-right: 1px solid #ddd;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px 5px 10px;
+    display:block;
+    transform: translate(0px, 5px);
+    color:red;
+}
+
