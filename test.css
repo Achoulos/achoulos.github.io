@@ -39,32 +39,36 @@ a.block-hide {
     color:red;
 }
 
-@-webkit-keyframes moveyf {
-    0% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
+@-webkit-keyframes movey {
+    from {
+        opacity: 0;
+       /* transform: translateX(0px);
+        -webkit-transform: translateX(0px);*/
     }
-    100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
+    to {
+        opacity: 1;
+        /* transform: translateX(110px);
+        -webkit-transform: translateX(110px);*/
     }
 }
 
 @keyframes movey {
-     0% {
-         transform: rotate(0deg);
-         -webkit-transform: rotate(0deg);
+     from {
+         opacity: 0;
+        /*  transform: translateX(0px);
+        -webkit-transform: translateX(0px);*/
      }
-    100% {
-        transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
+    to {
+        opacity: 1;
+       /* transform: translateX(110px);
+        -webkit-transform: translateX(110px); */
     }
 }
 
 span.block-hide:hover {
     color:green;
-    -webkit-animation: moveyf 5s infinite;
-    animation: movey 5s infinite;
+    -webkit-animation: movey 1.0s infinite;
+    animation: movey 1.0s infinite;
 }
 
 swaggin.block-hide {
