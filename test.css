@@ -146,11 +146,12 @@ hoverhands {
 
 .marker {
     position: absolute;
+    width: 100%;
     top:0px;
     
 }
 .arrow_box {
-    width: 100px;
+    width: 90px;
     padding: 5px 10px;
     bottom: 10px;
     display:inline-block;
@@ -174,7 +175,6 @@ hoverhands {
 	margin-left: -10px;
     visibility: hidden;
     left:50%;
-    margin-left: -(width/2)px;
 }
 
 hoverhands:hover .arrow_box {
