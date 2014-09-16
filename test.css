@@ -1,6 +1,10 @@
-p {
-    color: blue; 
-    text-decoration: underline;
+html {
+    background: #fff;
+}
+
+z {
+    background: #ff5656;
+     
 }
 
 strong {
@@ -21,6 +25,10 @@ a.swag:hover {
   font-size: 14px;
   font-style: italic;
   text-decoration: none;
+}
+
+#monee {
+    background: #ffc1c1;
 }
 
 #yolo {
@@ -85,13 +93,15 @@ span.block-hide:hover span.block-hide {
 }
 
 span.blocks {
+    display: inline-block;
     vertical-align: middle
     border-right: 1px solid #ddd;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:0px 1px 0px rgba(255,255,255,0.05) inset;
     padding: 5px 10px 5px 10px;
-    display: inline-block;
-    font-family:sans-serif;
+    /*border-radius:3px;*/
+
+    font-family:arial;
     background: #c4c4c4;
 }
 
@@ -100,21 +110,81 @@ span.innerblocks {
 
     border-right: 1px solid #ddd;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    box-shadow:0px 1px 0px rgba(255,255,255,0.05) inset;
     padding: 5px 10px 5px 10px;
     display:none;
     background: #d3d3d3
+    border-radius:3px;
 }
 
 span.blocks:hover > span.innerblocks {
-        vertical-align: middle
-
-    border-right: 1px solid #ddd;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
-    padding: 5px 10px 5px 10px;
-    display:block;
-    transform: translate(0px, 5px);
-    color:red;
+  display:block;
+    border-radius:3px;
+padding:8px 12px;
+color:#fff;
+font-family:arial;
+font-size:14px;
+text-shadow:1px 1px rgba(0,0,0,0.1);
+box-shadow:0px 1px 0px rgba(255,255,255,0.05) inset;
+background:#333;
+  
 }
 
+hoverhands {
+    vertical-align: middle
+    border-right: 1px solid #ddd;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    background:#ffa6a6;
+    color:white;
+    box-shadow:0px 1px 0px rgba(255,255,255,0.05) inset;
+    padding: 5px 10px 5px 10px;
+    display:inline-block;
+    background: #d3d3d3
+    border-radius:3px;
+    position:relative;
+}
+
+.arrow_box {
+	position: relative;
+	background: #ffa6a6;
+    visibility: hidden;
+}
+.arrow_box:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(136, 183, 213, 0);
+	border-top-color: #ffa6a6;
+	border-width: 10px;
+	margin-left: -10px;
+    visibility: hidden;
+}
+
+.dahover {
+    
+     vertical-align: middle
+    border-right: 1px solid #ddd;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    color:white;
+    box-shadow:0px 1px 0px rgba(255,255,255,0.05) inset;
+    padding: 5px 10px 5px 10px;
+    border-radius:3px;
+    position:relative;
+    width: 50%
+    
+}
+
+.dahover:hover .arrow_box {
+    position:relative;
+   visibility: visible;
+}
+.dahover:hover .arrow_box:after {
+    visibility: visible;
+}
