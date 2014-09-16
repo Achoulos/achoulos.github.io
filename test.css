@@ -142,7 +142,6 @@ hoverhands {
     background: #d3d3d3
     border-radius:3px;
     position:relative;
-   
 }
 
 .marker {
@@ -151,10 +150,14 @@ hoverhands {
     
 }
 .arrow_box {
+    width: 100px;
     padding: 5px 10px;
-    bottom: 5px;
+    bottom: 10px;
+    display:inline-block;
 	position: absolute;
     visibility: hidden;
+    left:50%;
+    margin-left: -50px;
 }
 .arrow_box:after {
 	top: 100%;
@@ -170,6 +173,8 @@ hoverhands {
 	border-width: 10px;
 	margin-left: -10px;
     visibility: hidden;
+    left:50%;
+    margin-left: -(width/2)px;
 }
 
 hoverhands:hover .arrow_box {
