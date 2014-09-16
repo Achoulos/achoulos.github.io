@@ -131,7 +131,7 @@ background:#333;
 }
 
 hoverhands {
-    vertical-align: middle
+    vertical-align:
     border-right: 1px solid #ddd;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
@@ -139,15 +139,21 @@ hoverhands {
     color:white;
     box-shadow:0px 1px 0px rgba(255,255,255,0.05) inset;
     padding: 5px 10px 5px 10px;
-    display:inline-block;
     background: #d3d3d3
     border-radius:3px;
     position:relative;
+   
 }
 
+.marker {
+    position: absolute;
+    top:0px;
+    
+}
 .arrow_box {
-	position: relative;
-	background: #ffa6a6;
+    padding: 5px 10px;
+    bottom: 5px;
+	position: absolute;
     visibility: hidden;
 }
 .arrow_box:after {
@@ -160,31 +166,16 @@ hoverhands {
 	position: absolute;
 	pointer-events: none;
 	border-color: rgba(136, 183, 213, 0);
-	border-top-color: #ffa6a6;
+	border-top-color: #ff5656;
 	border-width: 10px;
 	margin-left: -10px;
     visibility: hidden;
 }
 
-.dahover {
-    
-     vertical-align: middle
-    border-right: 1px solid #ddd;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    color:white;
-    box-shadow:0px 1px 0px rgba(255,255,255,0.05) inset;
-    padding: 5px 10px 5px 10px;
-    border-radius:3px;
-    position:relative;
-    width: 50%
-    
+hoverhands:hover .arrow_box {
+    visibility: visible;   
 }
 
-.dahover:hover .arrow_box {
-    position:relative;
-   visibility: visible;
-}
-.dahover:hover .arrow_box:after {
+hoverhands:hover .arrow_box:after {
     visibility: visible;
 }
